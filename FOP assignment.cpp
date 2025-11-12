@@ -193,6 +193,24 @@ void removeFromCart(vector<CartItem> &cart) {
   }
 }
 
+int Table() 
+{
+    int tableNumber;
+    int pax;
+
+    cout << "Enter table number: ";
+    cin >> tableNumber;
+
+    cout << "Enter number of pax: ";
+    cin >> pax;
+
+    cout << "\n--- Table Details ---\n";
+    cout << "Table Number: " << tableNumber << endl;
+    cout << "Number of Pax: " << pax << endl;
+
+    return 0; 
+}
+
 int DineOption(){
   int option;
   cout << "Please choose your option: \n";
@@ -283,6 +301,10 @@ bool checkout(vector<CartItem> &cart, int DineOption){
 
 
 int main() {
+  
+  Table();
+  return 0;
+  
   int choice = 0;
   int DineOpt = 0;
   while (choice != 7) {
@@ -318,4 +340,5 @@ int main() {
     }
   }
 }
+
 
